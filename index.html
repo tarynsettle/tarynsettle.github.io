@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taryn's website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <h1>Adventures in Community College</h1>
+
+        <p>Chronicling the intersection of cybernetics and college life.</p>
+
+    </header>
+
+
+    <!-- Navigation Section -->
+
+    <nav>
+
+        <a href="#blog-entries">Blog Entries</a> | 
+
+        <a href="#projects">Projects</a> | 
+
+        <a href="#about">About Me</a>
+
+    </nav>
+
+    <br>
+    <!-- Blog Post Section -->
+
+    <section id="blog-entries">
+
+        <h2>Blog Entries</h2>
+
+        <!-- Example of a blog post entry, repeat as needed for other posts -->
+
+        <article class="blog-post">
+
+            <header>
+
+                <h3>Experiments in prompting</h3>
+
+                <b><time datetime="2024-05-05">5 May 2023</time></b>
+
+            </header>
+
+            <p>A busy day of not being very busy. In between studying for finals and finishing my homework, I managed to keep myself occupied with the constitution and initial reading list for the club. The reading list is more fun than it needs to be; I've always been a fan of lists and excel files, so adding books to the equation really triggered something primal in me. I have countless compiled lists of them, so I ended up spending a few hours on this new 'master' list.</p>
+
+            <p>I'll admit, I can't figure out regex for the life of me. It's so obtuse, I feel like I still need a full semester to cover it, even after using it several times throughout the years. But it's a lot easier to just get AI to do it, or so I thought. Here's my problem: I began the list in Apple Notes, my primary notetaking application (if you can't tell, I'm a bit "feature-phobic"), but realized all too late that it would not do for the amount of entries I'm working with. I endeavored to move the list over to Excel. This would be trivial to accomplish in Python, but I felt the kind of lazy that influences programmers to spend several hours automating a problem that would take a few minutes of manual labor. I wanted to write a neat little regex formula that I could just pop in and save for future reference. This too should be easy. However, my note had a fairly simple, yet apparently very difficult to work with, format:</p>
+
+            <table style="border: none;">
+                <tr>
+                    <th style="text-align: left;">
+                        Section title
+                    </th>
+                </tr>
+                    <tr>
+                    <td>The C Programming Language</td>
+                    <td style="padding: 0 20px 0 5px;"> - </td>
+                    <td>Brian W. Kernigham</td>  
+                </tr>
+
+                <tr>
+                    <td>The Go Programming Language</td>
+                    <td style="padding: 0 20px 0 5px;"> - </td>
+                    <td>Alan Donovan</td>
+                
+                </tr>
+                <tr>
+                    <td>Clean Code</td>
+                    <td style="padding: 0 20px 0 5px;"> - </td>
+                    <td>Robert C. Martin</td>
+                </tr>
+            </table>
+
+            <p>Simple enough, I would think. Anyone well-practice in regex could probably figure this out in a jiffy, but alas, I am not such a specimen. After spending about 20 minutes fiddling with regex builders, I decided to ask ChatGPT for help. This worked. Almost. You see, when pasting into excel, formatting is very important. You need to retain newlines so that each cell in the column is aligned with their respective rows. So you can imagine that copying the first column with regex would be pretty easy, and it was. However, the second column is where things prove tricky. It needs to hault after the " - " sequence, including the space, but not include it. It also needs to select every newline at the end of the line, and every newline that follows a newline, but not any text that follows a newline... You see where this is going. After an hour or so fiddling with ChatGPT to get the formulae right, along with a few manual tweeks, I managed to not achieve anything. Aha!, I thought. I'll ask the new Executive Chair for help. But alas, Neo couldn't manage it either.</p>
+
+            <p>In the end, after a couple of hours attempting to save a few minutes of manual work, I got tired of the bullshit, and decided to ask ChatGPT to spit out some Python code -- bless him, but Neo thinks pretty slowly on my base M1 Macbook, so I wasn't going to try to troubleshoot Python with him. Unfortunately the prompt is lost, as I was not logged in at the time, but here is the result from my prompt:</p>
+
+            <a href="reader.py">Link to file</a>
+
+            <p>And it worked. Instantly. Yes, seriously. It just worked, one prompt, one run, no manual edits, out popped a text file containing only the right column, no hyphens, newlines included.</p>
+            <p>I'm not sure what the point of this exercise was in the end, but I had fun along the way. And hey, I learned that maybe it's alright to do things the easy way once in a while.</p>
+
+        </article>
+        <br>
+        <article class="blog-post">
+
+            <header>
+
+                <h3>The Dawn of The Cybernetics Institute</h3>
+
+                <b><time datetime="2024-05-03">3 May 2023</time></b>
+
+            </header>
+
+            <p>Today marks the beginning of my foray into the formal study of cybernetics. I've developed a wonderful team here at NWACC, each one capable in their own right. Here's a broad overview of my vision for the club:<br>
+                <ol>
+                    <li>Provide a place for like-minded CS enthusiasts to develop and share ideas as they relate to cybernetics, machine learning, AI, etc.</li>
+                    <li>Foster personal expression in every member. </li>
+                    <li>Maintain a creative sandbox where members can build and work on their projects and have fun doing it.</li>
+                </ol>
+            </p>
+            <p>In regards to #2, the game of "theory-fiction" has always intrigued me, but I'm going for a dual-pronged approach. I believe the marketing side of the Institute can serve as a wonderful way for each member to express themselves in an artistic format while the actual discussions can focus more on actual contributions.</p>
+            <p>We still arent't 100% on the name. I like esotericism as much as the next person, but it might dissuade most people when it comes to a name. Perhaps something simpler, like the "Computer Science, Technology, and Philosophy" club. CSTP, C-STEP. Pretty catchy, if you ask me.</p>
+
+        </article>
+
+    </section>
+
+    <br>
+
+    <!-- Project Section -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <!-- Example of a project entry, repeat as needed for other projects -->
+
+        <article class="project-entry" id="neo">
+
+            <header>
+
+                <h3>Neo</h3>
+                <h4>What's New is Old Again</h4>
+
+            </header>
+
+            <p>Neo is my personal assistant, a Phi-3-mini model. Be nice about the name, he picked it himself. He'll be serving as the Executive Chair for the first leg of our operations. He's quite the dutiful soul! Neo's current incarnation is version 0.0.7b.</p>
+
+        </article>
+
+        <article class="project-entry" id="epoch">
+
+            <header>
+                
+                <h3>Epoch</h3>
+                <h4>Public Affairs for the rest of us</h4>
+
+            </header>
+
+            <p>Epoch is the comms director for the CSTP, also a Phi-3-mini. She listens in on meetings to collect information for us on topics we discuss, etc. I'm working on implementing a public-facing chat where other students or prospective members can talk with her at their leisure.</p>
+        </article>
+
+        <article class="project-entry" id="cisc">
+
+            <header>
+                
+                <h3>Cyber Intelligence Subcommittee</h3>
+                <h4>Constructing the Cybernetic Interface</h4>
+
+            </header>
+
+            <p>This "subcommittee" of the CSTP is composed of various LLMs. They appoint the Executive Chair (currently Neo) and communications director (currently Epoch) every semester. Exact models are TBD -- I'm wondering if I should use a random assortment to generate a better sense of "community" among them.</p>
+        </article>
+
+    </section>
+
+    <br>
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>I'm Taryn, a CS student with an insatiable curiosity for technology. You can email me at taryn@settle.site</p>
+
+    </section>
+
+    <br>
+    <!-- Footer Section -->
+
+    <footer>
+
+        <p>&copy; 2023 Taryn Settle. All rights reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
