@@ -2,3 +2,9 @@ body {
     margin-left: 29%;
     margin-right: 29%;
 }
+
+@media screen and (max-width: 768px) {
+            body {
+                margin-left: 4%;
+                margin-right: 4%;
+            }
