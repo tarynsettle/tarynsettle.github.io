@@ -1,6 +1,12 @@
 body {
     margin-left: 29%;
     margin-right: 29%;
+    color: #9e73b2;
+    background-color: #181818;
+}
+
+a {
+    color: #9e73b2;
 }
 
 @media screen and (max-width: 768px) {
