@@ -1,12 +1,17 @@
 body {
-    margin-left: 29%;
-    margin-right: 29%;
+    margin-left: 25%;
+    margin-right: 25%;
     color: #9e73b2;
     background-color: #181818;
+    font-size: 100%;
 }
 
 a {
     color: #9e73b2;
+}
+
+p {
+    font-size: 1.17em;
 }
 
 @media screen and (max-width: 768px) {
