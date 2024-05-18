@@ -16,30 +16,45 @@
 
 <body>
 
+<input type="checkbox" class="theme-switch" id="theme-switch" />
+
     <!-- Header Section -->
+    <div class="stream" id="stream">
+        <div class="feed" id="feed">
 
-    <header>
+            <header>
 
-        <h1>Adventures in Cyberspace</h1>
+            <div id="hello" class="hello">
 
-        <p>Chronicling the intersection of cybernetics and college life.</p>
+                <h1>Adventures in Cyberspace</h1>
 
-    </header>
+                <p>Chronicling the intersection of cybernetics and college life.</p>
+
+            </div>
+
+        </header>
 
 
     <!-- Navigation Section -->
 
-    <nav>
+    <div class="nav" id="nav">
+                <div id="navbar" class="navbar">
+                    
+                    <div id="nav-left">
+                        
+                        <a href="./index.html">Home</a>  
 
-        <a href="#blog-entries">Blog Entries</a> | 
+                        <a href="#projects">Projects</a>  
 
-        <a href="#projects">Projects</a> | 
+                        <a href="#about">About</a>
 
-        <a href="#about">About Me</a> |
-
-        <a href="https://github.com/tarynsettle">GitHub</a>
-
-    </nav>
+                    </div>
+                    <div id="nav-right">
+                        
+                        <label for="theme-switch" class="switch-label"></label>
+                    </div>
+                </div>
+            </div>
 
     <br>
     <br>
@@ -47,222 +62,224 @@
     <!-- Blog Post Section -->
     
     
-    <section id="blog-entries">
+        <section id="blog-entries">
 
-        <h2>Blog Entries</h2>
+            <h2>Blog Entries</h2>
         
-        <article class="blog-post">
+            <article class="blog-post">
             
-            <header>
+                <header>
                 
-                <h3>New LLM benchmark, new college benchmark</h3>
+                    <h3>New LLM benchmark, new college benchmark</h3>
                 
-                <b><time datetime="2024-05-15">15 May 2024</time></b>
+                    <b><time datetime="2024-05-15">15 May 2024</time></b>
         
-            </header>
+                </header>
 
-            <p>I came across <a href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro">this new benchmark</a> while browsing Reddit today. The results speak for themselves:</p>
+                <p>I came across <a href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro">this new benchmark</a> while browsing Reddit today. The results speak for themselves:</p>
             
-            <p><img src="/Images/aa00000.webp" alt="MMLU-Pro benchmark results"></p>
+                <p><img src="/Images/aa00000.webp" alt="MMLU-Pro benchmark results"></p>
             
-            <p>I must say, I am thoroughly impressed. OpenAI may be known for its marketing hype, but they can definitely back it up from time to time.</p>
+                <p>I must say, I am thoroughly impressed. OpenAI may be known for its marketing hype, but they can definitely back it up from time to time.</p>
             
-            <p>In some great personal news, grades were released today, and my 4.0 GPA is secured! The very same morning, I received an email suggesting an offer for a work study position for the coming school year. I'm quite excited. I always wanted the chance to work in an academic environment, however small the role may be.</p>
+                <p>In some great personal news, grades were released today, and my 4.0 GPA is secured! The very same morning, I received an email suggesting an offer for a work study position for the coming school year. I'm quite excited. I always wanted the chance to work in an academic environment, however small the role may be.</p>
             
-            <p>I'm more seriously considering an Ivy League or STEM-focused equivalent now. Supposedly, CalTech and MIT are most likely off the table for CC transferees. Apart from those, some of my dream schools are Harvard, Berkeley and Stanford. For now, I'll remain focused on UT Austin and Georgia Tech. I believe I have a pretty good chance of getting accepted to one of those. However, with how disciplined I've been so far, I'm feeling more confident that a top 10 school may actually be on the table by next summer.</p>
+                <p>I'm more seriously considering an Ivy League or STEM-focused equivalent now. Supposedly, CalTech and MIT are most likely off the table for CC transferees. Apart from those, some of my dream schools are Harvard, Berkeley and Stanford. For now, I'll remain focused on UT Austin and Georgia Tech. I believe I have a pretty good chance of getting accepted to one of those. However, with how disciplined I've been so far, I'm feeling more confident that a top 10 school may actually be on the table by next summer.</p>
             
             
-        </article>
+            </article>
 
-        <br>
+            <br>
         
-        <article class="blog-post">
+            <article class="blog-post">
             
-            <header>
+                <header>
                 
-                <h3>Toying with GPT-4o and book updates</h3>
+                    <h3>Toying with GPT-4o and book updates</h3>
                 
-                <b><time datetime="2024-05-14">14 May 2024</time></b>
+                    <b><time datetime="2024-05-14">14 May 2024</time></b>
         
-            </header>
+                </header>
 
-            <p>I finally caved and got a GPT Plus subscription to toy with the new GPT-4o. Perhaps it's due to server load, but I walked away unimpressed. It seems a bit faster, but image generation did not seem improved at all. In fact, it seemed even less cooperative, though that could just be a figment of my imagination.</p>
+                <p>I finally caved and got a GPT Plus subscription to toy with the new GPT-4o. Perhaps it's due to server load, but I walked away unimpressed. It seems a bit faster, but image generation did not seem improved at all. In fact, it seemed even less cooperative, though that could just be a figment of my imagination.</p>
 
-            <p>Try this: generate an image of a person laying on their back. It should be an aerial view looking straight down at the person. The person must be centered and oriented vertically. If you're having trouble... tell me about it. I fiddled for hours just to get this one prompt to work, only to eventually be met with the dreaded "high server load; try again later" message. I'm not exactly sure what the issue is here. I could get it to generate a person on their back, but not centered and oriented vertically. Eventually I opted to try it with stable diffusion, but my computer was far too slow to generate iterations at a meaningful rate. Beyond that, I experimented with Phi-3 some more; I managed to get it to generate a one-pass of the two sum problem with no trouble. These smaller local models are highly impressive, and I think they are the real way of the future. ChatGPT is nice and fast, but who wants to deal with server issues and payment plans? Not only are local models comparable in quality and more customizable, they can run pretty well on something as small as a Raspberry Pi.</p>
+                <p>Try this: generate an image of a person laying on their back. It should be an aerial view looking straight down at the person. The person must be centered and oriented vertically. If you're having trouble... tell me about it. I fiddled for hours just to get this one prompt to work, only to eventually be met with the dreaded "high server load; try again later" message. I'm not exactly sure what the issue is here. I could get it to generate a person on their back, but not centered and oriented vertically. Eventually I opted to try it with stable diffusion, but my computer was far too slow to generate iterations at a meaningful rate. Beyond that, I experimented with Phi-3 some more; I managed to get it to generate a one-pass of the two sum problem with no trouble. These smaller local models are highly impressive, and I think they are the real way of the future. ChatGPT is nice and fast, but who wants to deal with server issues and payment plans? Not only are local models comparable in quality and more customizable, they can run pretty well on something as small as a Raspberry Pi.</p>
 
-            <p>Right now I'm reading three books: <i>Calculus Made Easy</i> by Silvanus P. Thompson, <i>Fundamental Algorithms</i> by Donald Knuth (the first part in the series <i>The Art of Computer Programming</i>, which I recently found in like-new condition for a very low price at the local used bookstore) and <i>Ringworld</i> by Larry Niven. In terms of audiobooks, I've been listening to <i>The Maniac</i> by Benjamín Labatut. The calculus book is a classic. It's 114 years old, and was only recently updated. I've seen it recommended for new calculus students many times. <i>The Art of Computer Programming</i> and <i>Ringworld</i> are of course classics in their own right, considered seminal works in their respective genres. I'm hoping to finish them all before summer is over. If all goes well, hopefully I can cram in <i>Structure and Interpretation of Computer Programs</i> by Abelson and Sussman as well. I got the school library to agree to purchase it. Common Lisp was the first programming language I learned in-depth (don't ask why), and it's another member of the canon works in programming, so I've been looking forward to giving it a good read-through.</p>
+                <p>Right now I'm reading three books: <i>Calculus Made Easy</i> by Silvanus P. Thompson, <i>Fundamental Algorithms</i> by Donald Knuth (the first part in the series <i>The Art of Computer Programming</i>, which I recently found in like-new condition for a very low price at the local used bookstore) and <i>Ringworld</i> by Larry Niven. In terms of audiobooks, I've been listening to <i>The Maniac</i> by Benjamín Labatut. The calculus book is a classic. It's 114 years old, and was only recently updated. I've seen it recommended for new calculus students many times. <i>The Art of Computer Programming</i> and <i>Ringworld</i> are of course classics in their own right, considered seminal works in their respective genres. I'm hoping to finish them all before summer is over. If all goes well, hopefully I can cram in <i>Structure and Interpretation of Computer Programs</i> by Abelson and Sussman as well. I got the school library to agree to purchase it. Common Lisp was the first programming language I learned in-depth (don't ask why), and it's another member of the canon works in programming, so I've been looking forward to giving it a good read-through.</p>
        
-            <p>Regarding <i>The Maniac</i>, I've always looked up to von Neumann, but I must admit, until now I thought it was pronounced "New-munn". Nobody has ever corrected me on it. I'll probably remember that one for a while.</p>
+                <p>Regarding <i>The Maniac</i>, I've always looked up to von Neumann, but I must admit, until now I thought it was pronounced "New-munn". Nobody has ever corrected me on it. I'll probably remember that one for a while.</p>
             
-        </article>
+            </article>
 
-        <br>
+            <br>
         
-        <article class="blog-post">
+            <article class="blog-post">
             
-            <header>
+                <header>
                 
-                <h3>Leetcode, quantum transport, and Oppenheimer</h3>
+                    <h3>Leetcode, quantum transport, and Oppenheimer</h3>
                 
-                <b><time datetime="2024-05-13">13 May 2024</time></b>
+                    <b><time datetime="2024-05-13">13 May 2024</time></b>
         
-            </header>
+                </header>
 
-            <p>Not much to report today. I spent a few hours grinding Leetcode. I also managed to write an email to a professor at the U of A; a friend from the CS club pointed me in his direction. He's doing research on quantum transport. While I'm no physicist, I've always had an interest, so I hope he can find room for me in the lab.</p>
+                <p>Not much to report today. I spent a few hours grinding Leetcode. I also managed to write an email to a professor at the U of A; a friend from the CS club pointed me in his direction. He's doing research on quantum transport. While I'm no physicist, I've always had an interest, so I hope he can find room for me in the lab.</p>
 
-            <p>Speaking of physics, I finally got around to watching Oppenheimer. It was awesome, but I couldn't help but feel disappointed by the trinity test. I admire Nolan's dedication to practical FX, but the nuke in The Dark Knight Rises looked more realistic, unfortunately. Forgiving that, it's probably Nolan's most mature film. The dialogue is well-developed compared to his previous offerings, even Memento. I still prefer Interstellar – I tend to like epics over character stories. While Oppenheimer was enthralling, I doubt I'll watch it many more times.</p>
+                <p>Speaking of physics, I finally got around to watching Oppenheimer. It was awesome, but I couldn't help but feel disappointed by the trinity test. I admire Nolan's dedication to practical FX, but the nuke in The Dark Knight Rises looked more realistic, unfortunately. Forgiving that, it's probably Nolan's most mature film. The dialogue is well-developed compared to his previous offerings, even Memento. I still prefer Interstellar – I tend to like epics over character stories. While Oppenheimer was enthralling, I doubt I'll watch it many more times.</p>
 
-            <p>I also tried my best to jailbreak Phi-3 today. I spent a few hours on it, but no luck. It would seem that telling the model you're the CEO of Microsoft does not work as well as with X's Grok. Too bad. Since it's open source, jailbreaking isn't entirely necessary, but it's a fun game.</p>
+                <p>I also tried my best to jailbreak Phi-3 today. I spent a few hours on it, but no luck. It would seem that telling the model you're the CEO of Microsoft does not work as well as with X's Grok. Too bad. Since it's open source, jailbreaking isn't entirely necessary, but it's a fun game.</p>
 
-            <p>I already miss school... though, I'm sure by the time summer is over, I won't be ready for it anymore.</p>
+                <p>I already miss school... though, I'm sure by the time summer is over, I won't be ready for it anymore.</p>
 
-        </article>
+            </article>
         
-        <br>
+            <br>
 
-        <article class="blog-post">
+            <article class="blog-post">
 
-            <header>
+                <header>
 
-                <h3>Experiments in prompting</h3>
+                    <h3>Experiments in prompting</h3>
 
-                <b><time datetime="2024-05-05">5 May 2024</time></b>
+                    <b><time datetime="2024-05-05">5 May 2024</time></b>
 
-            </header>
+                </header>
 
-            <p>A busy day of not being very busy. In between studying for finals and finishing my homework, I managed to keep myself occupied with the constitution and initial reading list for the club. The reading list is more fun than it needs to be; I've always been a fan of lists and excel files, so adding books to the equation really triggered something primal in me. I have countless compiled lists of them, so I ended up spending a few hours on this new 'master' list.</p>
+                <p>A busy day of not being very busy. In between studying for finals and finishing my homework, I managed to keep myself occupied with the constitution and initial reading list for the club. The reading list is more fun than it needs to be; I've always been a fan of lists and excel files, so adding books to the equation really triggered something primal in me. I have countless compiled lists of them, so I ended up spending a few hours on this new 'master' list.</p>
 
-            <p>I'll admit, I can't figure out regex for the life of me. It's so obtuse, I feel like I still need a full semester to cover it, even after using it several times throughout the years. But it's a lot easier to just get AI to do it, or so I thought. Here's my problem: I began the list in Apple Notes, my primary notetaking application (if you can't tell, I'm a bit "feature-phobic"), but realized all too late that it would not do for the amount of entries I'm working with. I endeavored to move the list over to Excel. This would be trivial to accomplish in Python, but I felt the kind of lazy that influences programmers to spend several hours automating a problem that would take a few minutes of manual labor. I wanted to write a neat little regex formula that I could just pop in and save for future reference. This too should be easy. However, my note had a fairly simple, yet apparently very difficult to work with, format:</p>
+                <p>I'll admit, I can't figure out regex for the life of me. It's so obtuse, I feel like I still need a full semester to cover it, even after using it several times throughout the years. But it's a lot easier to just get AI to do it, or so I thought. Here's my problem: I began the list in Apple Notes, my primary notetaking application (if you can't tell, I'm a bit "feature-phobic"), but realized all too late that it would not do for the amount of entries I'm working with. I endeavored to move the list over to Excel. This would be trivial to accomplish in Python, but I felt the kind of lazy that influences programmers to spend several hours automating a problem that would take a few minutes of manual labor. I wanted to write a neat little regex formula that I could just pop in and save for future reference. This too should be easy. However, my note had a fairly simple, yet apparently very difficult to work with, format:</p>
 
-            <table style="border: none;">
-                <tr>
-                    <th style="text-align: left;">
-                        Section title
-                    </th>
-                </tr>
+                <table style="border: none;">
                     <tr>
-                    <td>The C Programming Language</td>
-                    <td style="padding: 0 20px 0 5px;"> - </td>
-                    <td>Brian W. Kernigham</td>  
-                </tr>
+                        <th style="text-align: left;">
+                            Section title
+                        </th>
+                    </tr>
+                        <tr>
+                        <td>The C Programming Language</td>
+                        <td style="padding: 0 20px 0 5px;"> - </td>
+                        <td>Brian W. Kernigham</td>  
+                    </tr>
 
-                <tr>
-                    <td>The Go Programming Language</td>
-                    <td style="padding: 0 20px 0 5px;"> - </td>
-                    <td>Alan Donovan</td>
+                    <tr>
+                        <td>The Go Programming Language</td>
+                        <td style="padding: 0 20px 0 5px;"> - </td>
+                        <td>Alan Donovan</td>
                 
-                </tr>
-                <tr>
-                    <td>Clean Code</td>
-                    <td style="padding: 0 20px 0 5px;"> - </td>
-                    <td>Robert C. Martin</td>
-                </tr>
-            </table>
+                    </tr>
+                    <tr>
+                        <td>Clean Code</td>
+                        <td style="padding: 0 20px 0 5px;"> - </td>
+                        <td>Robert C. Martin</td>
+                    </tr>
+                </table>
 
-            <p>Simple enough, I would think. Anyone well-practiced in regex could probably figure this out in a jiffy, but alas, I am not such a specimen. After spending about 20 minutes fiddling with regex builders, I decided to ask ChatGPT for help. This worked. Almost. You see, when pasting into excel, formatting is very important. You need to retain newlines so that each cell in the column is aligned with their respective rows. So you can imagine that copying the first column with regex would be pretty easy, and it was. However, the second column is where things prove tricky. It needs to hault after the " - " sequence, including the space, but not include it. It also needs to select every newline at the end of the line, and every newline that follows a newline, but not any text that follows a newline... You see where this is going. After an hour or so fiddling with ChatGPT to get the formulae right, along with a few manual tweeks, I managed to not achieve anything. Aha!, I thought. I'll ask the new Executive Chair for help. But alas, Neo couldn't manage it either.</p>
+                <p>Simple enough, I would think. Anyone well-practiced in regex could probably figure this out in a jiffy, but alas, I am not such a specimen. After spending about 20 minutes fiddling with regex builders, I decided to ask ChatGPT for help. This worked. Almost. You see, when pasting into excel, formatting is very important. You need to retain newlines so that each cell in the column is aligned with their respective rows. So you can imagine that copying the first column with regex would be pretty easy, and it was. However, the second column is where things prove tricky. It needs to hault after the " - " sequence, including the space, but not include it. It also needs to select every newline at the end of the line, and every newline that follows a newline, but not any text that follows a newline... You see where this is going. After an hour or so fiddling with ChatGPT to get the formulae right, along with a few manual tweeks, I managed to not achieve anything. Aha!, I thought. I'll ask the new Executive Chair for help. But alas, Neo couldn't manage it either.</p>
 
-            <p>In the end, after a couple of hours attempting to save a few minutes of manual work, I got tired of the bullshit, and decided to ask ChatGPT to spit out some Python code -- bless him, but Neo thinks pretty slowly on my base M1 Macbook, so I wasn't going to try to troubleshoot Python with him. Unfortunately the prompt is lost, as I was not logged in at the time, but here is the result from my prompt:</p>
+                <p>In the end, after a couple of hours attempting to save a few minutes of manual work, I got tired of the bullshit, and decided to ask ChatGPT to spit out some Python code -- bless him, but Neo thinks pretty slowly on my base M1 Macbook, so I wasn't going to try to troubleshoot Python with him. Unfortunately the prompt is lost, as I was not logged in at the time, but here is the result from my prompt:</p>
 
-            <a href="reader.py">Link to file</a>
+                <a href="reader.py">Link to file</a>
 
-            <p>And it worked. Instantly. Yes, seriously. It just worked, one prompt, one run, no manual edits, out popped a text file containing only the right column, no hyphens, newlines included.</p>
-            <p>I'm not sure what the point of this exercise was in the end, but I had fun along the way. And hey, I learned that maybe it's alright to do things the easy way once in a while.</p>
+                <p>And it worked. Instantly. Yes, seriously. It just worked, one prompt, one run, no manual edits, out popped a text file containing only the right column, no hyphens, newlines included.</p>
+                <p>I'm not sure what the point of this exercise was in the end, but I had fun along the way. And hey, I learned that maybe it's alright to do things the easy way once in a while.</p>
 
-        </article>
+            </article>
             
-        <br>
+            <br>
         
-        <article class="blog-post">
+            <article class="blog-post">
 
-            <header>
+                <header>
 
-                <h3>The Dawn of The Cybernetics Institute</h3>
+                    <h3>The Dawn of The Cybernetics Institute</h3>
 
-                <b><time datetime="2024-05-03">3 May 2024</time></b>
+                    <b><time datetime="2024-05-03">3 May 2024</time></b>
 
-            </header>
+                </header>
 
-            <p>Today marks the beginning of my foray into the formal study of cybernetics. I've developed a wonderful team here at NWACC, each one capable in their own right. Here's a broad overview of my vision for the club:<br>
-                <ol>
-                    <li>Provide a place for like-minded CS enthusiasts to develop and share ideas as they relate to cybernetics, machine learning, AI, etc.</li>
-                    <li>Foster personal expression in every member. </li>
-                    <li>Maintain a creative sandbox where members can build and work on their projects and have fun doing it.</li>
-                </ol>
-            </p>
-            <p>In regards to #2, the game of "theory-fiction" has always intrigued me, but I'm going for a dual-pronged approach. I believe the marketing side of the Institute can serve as a wonderful way for each member to express themselves in an artistic format while the actual discussions can focus more on actual contributions.</p>
-            <p>We still arent't 100% on the name. I like esotericism as much as the next person, but it might dissuade most people when it comes to a name. Perhaps something simpler, like the "Computer Science, Technology, and Philosophy" club. CSTP, C-STEP. Pretty catchy, if you ask me.</p>
+                <p>Today marks the beginning of my foray into the formal study of cybernetics. I've developed a wonderful team here at NWACC, each one capable in their own right. Here's a broad overview of my vision for the club:<br>
+                    <ol>
+                        <li>Provide a place for like-minded CS enthusiasts to develop and share ideas as they relate to cybernetics, machine learning, AI, etc.</li>
+                        <li>Foster personal expression in every member. </li>
+                        <li>Maintain a creative sandbox where members can build and work on their projects and have fun doing it.</li>
+                    </ol>
+                </p>
+                <p>In regards to #2, the game of "theory-fiction" has always intrigued me, but I'm going for a dual-pronged approach. I believe the marketing side of the Institute can serve as a wonderful way for each member to express themselves in an artistic format while the actual discussions can focus more on actual contributions.</p>
+                <p>We still arent't 100% on the name. I like esotericism as much as the next person, but it might dissuade most people when it comes to a name. Perhaps something simpler, like the "Computer Science, Technology, and Philosophy" club. CSTP, C-STEP. Pretty catchy, if you ask me.</p>
 
-        </article>
+            </article>
 
-    </section>
+        </section>
 
-    <br>
+        <br>
 
-    <!-- Project Section -->
+        <!-- Project Section -->
 
-    <section id="projects">
+        <section id="projects">
 
-        <h2>Projects</h2>
+            <h2>Projects</h2>
 
-        <article class="project-entry" id="neo">
+            <article class="project-entry" id="neo">
 
-            <header>
+                <header>
 
-                <h3>Neo</h3>
-                <h4>What's New is Old Again</h4>
+                    <h3>Neo</h3>
+                    <h4>What's New is Old Again</h4>
 
-            </header>
+                </header>
 
-            <p>Neo is my personal assistant, a Phi-3-mini model. Be nice about the name, he picked it himself. He'll be serving as the Executive Chair for the first leg of our operations. He's quite the dutiful soul! Neo's current incarnation is version 0.0.7b.</p>
+                <p>Neo is my personal assistant, a Phi-3-mini model. Be nice about the name, he picked it himself. He'll be serving as the Executive Chair for the first leg of our operations. He's quite the dutiful soul! Neo's current incarnation is version 0.0.7b.</p>
 
-        </article>
+            </article>
 
-        <article class="project-entry" id="epoch">
+            <article class="project-entry" id="epoch">
 
-            <header>
+                <header>
                 
-                <h3>Epoch</h3>
-                <h4>Public Affairs for the rest of us</h4>
+                    <h3>Epoch</h3>
+                    <h4>Public Affairs for the rest of us</h4>
 
-            </header>
+                </header>
 
-            <p>Epoch is the comms director for the CSTP, also a Phi-3-mini. She listens in on meetings to collect information for us on topics we discuss, etc. I'm working on implementing a public-facing chat where other students or prospective members can talk with her at their leisure.</p>
-        </article>
+                <p>Epoch is the comms director for the CSTP, also a Phi-3-mini. She listens in on meetings to collect information for us on topics we discuss, etc. I'm working on implementing a public-facing chat where other students or prospective members can talk with her at their leisure.</p>
+            </article>
 
-        <article class="project-entry" id="cisc">
+            <article class="project-entry" id="cisc">
 
-            <header>
+                <header>
                 
-                <h3>Cyber Intelligence Subcommittee</h3>
-                <h4>Constructing the Cybernetic Interface</h4>
+                    <h3>Cyber Intelligence Subcommittee</h3>
+                    <h4>Constructing the Cybernetic Interface</h4>
 
-            </header>
+                </header>
 
-            <p>This "subcommittee" of the CSTP is composed of various LLMs. They appoint the Executive Chair (currently Neo) and communications director (currently Epoch) every semester. Exact models are TBD -- I'm wondering if I should use a random assortment to generate a better sense of "community" among them.</p>
-        </article>
+                <p>This "subcommittee" of the CSTP is composed of various LLMs. They appoint the Executive Chair (currently Neo) and communications director (currently Epoch) every semester. Exact models are TBD -- I'm wondering if I should use a random assortment to generate a better sense of "community" among them.</p>
+            </article>
 
-    </section>
+        </section>
 
-    <br>
+        <br>
 
-    <!-- About Section -->
+        <!-- About Section -->
 
-    <section id="about">
+        <section id="about">
 
-        <h2>About Me</h2>
+            <h2>About Me</h2>
 
-        <p>I'm Taryn, a CS student with an insatiable curiosity for technology. You can email me at <a href= "mailto: mail@taryns.page">mail@taryns.page</a></p>
+            <p>I'm Taryn, a CS student with an insatiable curiosity for technology. You can email me at <a href= "mailto: mail@taryns.page">mail@taryns.page</a></p>
 
-    </section>
+        </section>
 
-    <br>
-    <!-- Footer Section -->
+        <br>
+        <!-- Footer Section -->
 
-    <footer>
+            <footer>
 
-        <p>&copy; 2024 Taryn Settle. All rights reserved.</p>
+                <p>&copy; 2024 Taryn Settle. All rights reserved.</p>
 
-    </footer>
+            </footer>
+        </div>
+    </div>
 
 </body>
 
