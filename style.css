@@ -26,7 +26,7 @@
     /* Dark */
     --dark-switch-shadow: white;
     --dark-switch-icon: "⚪️";
-    --dark-font: normal .8rem/1.5rem 'Mono Light', monospace;
+    --dark-font: normal .9rem/1.5rem 'Mono Light', monospace;
     --dark-text: rgb(225, 225, 225);
     --dark-bg: #181818;
     --dark-frost: rgba(43, 43, 43, 0.455);
