@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Mono Light';
-    src: url('./fonts/mono.ttf') format('truetype');
-    font-weight: normal;
+    src: url('./Fonts/mono.ttf') format('truetype');
+    font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ronyhand Rough';
-    src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    src: url('./Fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
