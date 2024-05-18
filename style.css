@@ -105,6 +105,8 @@ body {
 }
 
 #feed {
+    padding-left: .5rem;
+    padding-right: .5rem;
     margin-left: 26%;
     margin-right: 26%;
     position: relative;
@@ -120,12 +122,15 @@ body {
 }
 
 #nav {
+
+    z-index: 10000;
     width: inherit;
     position: sticky;
     position: -webkit-sticky;
     border-radius: 10px;
     top: 1rem;
-    margin: auto;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: .5rem;
@@ -177,6 +182,53 @@ body {
 article {
     margin-top: 2rem;
     margin-bottom: 4rem;
+}
+
+.title {
+    width: inherit;
+    position: sticky;
+    position: -webkit-sticky;
+    border-radius: 10px;
+    top: 6rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    margin-top: 0;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    /* padding: .5rem; */
+    background: var(--frost-color);
+    /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+}
+
+.line { 
+    width: inherit;
+    height: .01em;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .25em;
+    margin-left: .5rem;
+    background-color: var(--theme-color);
+    
+    }
+
+.spacer {
+    width: inherit;
+    height: 4rem;
+}
+
+h3 {
+    margin-top: .2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 0;
+}
+
+time {
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 a, h3 {
