@@ -32,14 +32,14 @@
 
 @font-face {
     font-family: 'Mono';
-    src: url('../fonts/mono.ttf') format('truetype');
+    src: url('./fonts/mono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ronyhand Rough';
-    src: url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
