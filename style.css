@@ -1,17 +1,175 @@
+:root {
+    /* Light  */
+    --light-switch-shadow: #0000004d;
+    --light-switch-icon: "⚫️";
+    --light-font: 1.1em/1rem serif;
+    --light-text: black;
+    --light-bg: white;
+    --light-frost: rgba(255, 255, 255, 0.55);
+    --light-nav: rgba(255, 255, 255, 0.33);
+    --light-theme: black;
+  
+    /* Dark */
+    --dark-switch-shadow: white;
+    --dark-switch-icon: "⚪️";
+    --dark-font: normal .9em/1rem 'Courier New', monospace;
+    --dark-text: rgb(225, 225, 225);
+    --dark-bg: #181818;
+    --dark-frost: rgba(43, 43, 43, 0.455);
+    --dark-nav: rgba(0, 0, 0, 0.396);
+    --dark-theme: #9e73b2;
+  
+    /* Default */
+    --switch-shadow-color: var(--light-switch-shadow);
+    --switch-icon: var(--light-switch-icon);
+    --text-font: var(--light-font);
+    --text-color: var(--light-text);
+    --bg-color: var(--light-bg);
+    --frost-color: var(--light-frost);
+    --nav-color: var(--light-nav);
+    --theme-color: var(--light-theme);
+}
+  
+  .theme-switch:checked ~ #stream {
+    --switch-shadow-color: var(--dark-switch-shadow);
+    --switch-icon: var(--dark-switch-icon);
+    --text-font: var(--dark-font);
+    --text-color: var(--dark-text);
+    --bg-color: var(--dark-bg);
+    --frost-color: var(--dark-frost);
+    --nav-color: var(--dark-nav);
+    --theme-color: var(--dark-theme);
+}
+  
+.theme-switch {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    text-align: right;
+    margin-left: auto;
+    padding-left: auto;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+  
+.switch-label{
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.switch-label::before {
+    text-align: right;
+    content: var(--switch-icon);
+    transition: text-shadow .2s;
+}
+  
+.switch-label::after {
+    align-self: center;
+    color: var(--switch-shadow-color);
+    font: var(--text-font);
+    opacity: 0;
+    transition: opacity .2s;
+    
+}
+
+html,
 body {
-    margin-left: 25%;
-    margin-right: 25%;
-    color: #9e73b2;
-    background-color: #181818;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+#stream {
     font-size: 100%;
+    font: var(--text-font);
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: color .2s, background-color .2s;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-a {
-    color: #9e73b2;
+#feed {
+    margin-left: 28%;
+    margin-right: 28%;
+    position: relative;
+    margin-bottom: 2rem;
+
 }
 
-p {
-    font-size: 1.17em;
+#hello {
+    height: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+#nav {
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    border-radius: 10px;
+    top: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background: var(--frost-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.navbar {  
+    display: flex;
+    justify-content: space-between;
+    justify-content: center space-between;
+    align-items: center;
+    padding: 1rem;
+    max-height: fit-content;
+    margin-inline: auto;
+    border-radius: 10px;
+    text-align: center;
+    background: var(--nav-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+ 
+.nav-left {
+    display: flex;
+    max-height: fit-content;
+}
+
+.nav-right {
+    text-decoration: none;
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 .5rem 0 .1rem;
+
+    transition: text-shadow .2s;
+}
+
+.navbar a:hover, .switch-label:hover::before {
+    text-decoration: none;
+    text-shadow: 0 0 10px var(--switch-shadow-color);
+}
+
+a, h3 {
+
+    color: var(--theme-color);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -21,7 +179,3 @@ p {
             }
 }
 
-img {
-    width: 100%;
-    opacity: 0.4;
-}
