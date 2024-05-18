@@ -183,7 +183,7 @@ img {
     width: 75%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
             #feed {
                 margin-left: 7%;
                 margin-right: 7%;
