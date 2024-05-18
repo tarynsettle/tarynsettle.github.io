@@ -2,7 +2,7 @@
     /* Light  */
     --light-switch-shadow: #0000004d;
     --light-switch-icon: "⚫️";
-    --light-font: 1.1em/1rem serif;
+    --light-font: 1rem/1.5rem 'Ronyhand Rough', serif;
     --light-text: black;
     --light-bg: white;
     --light-frost: rgba(255, 255, 255, 0.55);
@@ -12,7 +12,7 @@
     /* Dark */
     --dark-switch-shadow: white;
     --dark-switch-icon: "⚪️";
-    --dark-font: normal .9em/1rem 'Courier New', monospace;
+    --dark-font: normal .8rem/1.5rem 'Mono Light', monospace;
     --dark-text: rgb(225, 225, 225);
     --dark-bg: #181818;
     --dark-frost: rgba(43, 43, 43, 0.455);
