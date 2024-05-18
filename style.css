@@ -29,6 +29,20 @@
     --nav-color: var(--light-nav);
     --theme-color: var(--light-theme);
 }
+
+@font-face {
+    font-family: 'Mono';
+    src: url('../fonts/mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ronyhand Rough';
+    src: url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
   
   .theme-switch:checked ~ #stream {
     --switch-shadow-color: var(--dark-switch-shadow);
