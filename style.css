@@ -164,7 +164,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    margin: 0 .5rem 0 .1rem;
+    margin: 0 .5rem 0 .5rem;
     transition: text-shadow .2s;
 }
 
