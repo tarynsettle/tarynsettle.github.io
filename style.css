@@ -31,7 +31,7 @@
 }
 
 @font-face {
-    font-family: 'Mono';
+    font-family: 'Mono Light';
     src: url('./fonts/mono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -39,7 +39,7 @@
 
 @font-face {
     font-family: 'Ronyhand Rough';
-    src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -83,7 +83,6 @@
     font: var(--text-font);
     opacity: 0;
     transition: opacity .2s;
-    
 }
 
 html,
@@ -165,7 +164,6 @@ body {
 .navbar a {
     text-decoration: none;
     margin: 0 .5rem 0 .1rem;
-
     transition: text-shadow .2s;
 }
 
@@ -175,7 +173,6 @@ body {
 }
 
 a, h3 {
-
     color: var(--theme-color);
 }
 
