@@ -22,6 +22,7 @@
     --light-frost: rgba(255, 255, 255, 0.55);
     --light-nav: rgba(255, 255, 255, 0.33);
     --light-theme: black;
+    --light-spacer-icon: none;
   
     /* Dark */
     --dark-switch-shadow: white;
@@ -32,6 +33,7 @@
     --dark-frost: rgba(43, 43, 43, 0.455);
     --dark-nav: rgba(0, 0, 0, 0.396);
     --dark-theme: #ffdd00;
+    --dark-spacer-icon: invert(100%);
   
     /* Default */
     --switch-shadow-color: var(--light-switch-shadow);
@@ -42,6 +44,7 @@
     --frost-color: var(--light-frost);
     --nav-color: var(--light-nav);
     --theme-color: var(--light-theme);
+    --spacer-color: var(--light-spacer-icon)
 }
 
   .theme-switch:checked ~ #stream {
@@ -53,6 +56,7 @@
     --frost-color: var(--dark-frost);
     --nav-color: var(--dark-nav);
     --theme-color: var(--dark-theme);
+    --spacer-color: var(--dark-spacer-icon)
 }
   
 .theme-switch {
@@ -217,12 +221,16 @@ article {
     margin-bottom: .25em;
     margin-left: .5rem;
     background-color: var(--theme-color);
-    
     }
 
 .spacer {
     width: inherit;
     height: 6rem;
+}
+
+#spacer-icon {
+    filter: var(--spacer-color);
+    width: 25%;
 }
 
 h3 {
